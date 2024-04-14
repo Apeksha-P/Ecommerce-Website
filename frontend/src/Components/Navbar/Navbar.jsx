@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import './Navbar.css'
 import logo from '../Assets/logo.png'
 import cart_icon from '../Assets/cart.png'
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
 
@@ -14,14 +15,14 @@ const Navbar = () => {
         <p>SHOPPER</p>
       </div>
       <ul className="nav-menu">
-        <li onClick={()=>{setmenu("shop")}}>Shop{menu==="shop"?<hr/>:null}</li>
-        <li onClick={()=>{setmenu("mens")}}>Men{menu==="mens"?<hr/>:null}</li>
-        <li onClick={()=>{setmenu("womens")}}>Women{menu==="womens"?<hr/>:null}</li>
-        <li onClick={()=>{setmenu("kids")}}>Kids{menu==="kids"?<hr/>:null}</li>
+        <li onClick={()=>{setmenu("shop")}}><Link to='/'>Shop</Link>{menu==="shop"?<hr/>:null}</li>
+        <li onClick={()=>{setmenu("mens")}}><Link to='/mens'>Men</Link>{menu==="mens"?<hr/>:null}</li>
+        <li onClick={()=>{setmenu("womens")}}><Link to='/womens'>Women</Link>{menu==="womens"?<hr/>:null}</li>
+        <li onClick={()=>{setmenu("kids")}}><Link to='/kids'>Kids</Link>{menu==="kids"?<hr/>:null}</li>
       </ul>
       <div className="nav-login-cart">
-        <button>Login</button>
-        <img src={cart_icon} alt="" />
+        <Link to='/login'><button>Login</button></Link>
+        <Link to='/cart'><img src={cart_icon} alt="cart" /></Link>
         <div className="nav-cart-count">0</div>
       </div>
     </div>
