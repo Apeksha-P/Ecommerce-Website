@@ -28,7 +28,7 @@
     gap: 20px;
 }
 .hero-hand-icon img{
-    width: 100px;
+    width: 105px
 }
 
 .hero-latest-btn p{
@@ -46,10 +46,7 @@
     font-weight: 500;
 }
 .hero-latest-btn img{
-    margin-left: 260px;
-    position: relative;
-    top: -55px;
-    height: 40px;
+    width: 105px;
 }
 .hero-right{
     flex: 1;
