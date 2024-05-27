@@ -31,7 +31,7 @@
     width: 105px
 }
 
-.hero-latest-btn p{
+.hero-latest-btn{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -44,9 +44,6 @@
     color: white;
     font-size: 22px;
     font-weight: 500;
-}
-.hero-latest-btn img{
-    width: 105px;
 }
 .hero-right{
     flex: 1;
