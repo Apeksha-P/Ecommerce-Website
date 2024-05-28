@@ -1,4 +1,4 @@
-.newsletter{
+.newslatter{
     width: 65%;
     height: 40vh;
     display: flex;
@@ -11,16 +11,16 @@
     gap: 30px;
     background: linear-gradient(180deg,#fde1ff 0%,#e1ffea22 60%); 
 }
-.newsletter h1{
+.newslatter h1{
     color: #454545;
     font-size: 55px;
     font-weight: 600;
 }
-.newsletter p{
+.newslatter p{
     color: #454545;
     font-size: 20px;
 }
-.newsletter div{
+.newslatter div{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -30,7 +30,7 @@
     border-radius: 80px;
     border: 1px solid #bebdbd;
 }
-.newsletter input{
+.newslatter input{
     width: 500px;
     margin-left: 30px;
     border: none;
@@ -39,7 +39,7 @@
     font-family: Poppins;
     font-size: 16px;
 }
-.newsletter div button{
+.newslatter div button{
     width: 210px;
     height: 70px;
     border-radius: 80px;
