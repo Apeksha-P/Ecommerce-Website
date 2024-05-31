@@ -80,6 +80,9 @@
     cursor: pointer;
     margin-top: 10px;
 }
+.productdisplay-right button:hover{
+    transform: scale(1.1);
+}
 .productdisplay-right-category{
     margin-top: 10px;
 }
