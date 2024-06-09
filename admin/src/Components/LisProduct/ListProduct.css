@@ -23,3 +23,30 @@
     align-items: center;
     font-weight: 500;
 }
+.listproduct-product-icon{
+    height: 80px;
+}
+.listproduct-remove-icon{
+    cursor: pointer;
+    margin: auto;
+}
+.list-product-allproducts{
+    overflow-y: auto;
+}
+@media(max-width:800){
+    .list-product{
+        box-sizing: border-box;
+        width: 95%;
+        height: 100%;
+        padding: 10px 30px;
+        margin: 20px auto;
+    }
+    .listproduct-format{
+        padding: 15px 0px;
+        color: #454545;
+        font-size: 12px;
+    }
+    .listproduct-product-icon{
+        height: 60px;
+    }
+}
