@@ -6,8 +6,6 @@ const jwt = require("jsonwebtoken");
 const multer = require("multer");
 const path = require("path");
 const cors = require("cors");
-const { type } = require("os");
-const { error } = require("console");
 
 app.use(express.json());
 app.use(cors());
@@ -240,6 +238,12 @@ app.post('./removefromcart',fetchUser,async(req,res)=>{
         await Users.findOneAndUpdate({_id:req.user.id},{cartData:userData.cartData});
         res.send("Removed");
     }
+})
+//creating andpoint to get cartData
+app.post('./getcart',fetchUser,async(req,res)=>{
+    console.log(GetCart);
+    let userData = await Users.findOne({_id:req.user.id});
+    res.json(userData.cartData);
 })
 
 app.listen(port,(error)=>{
